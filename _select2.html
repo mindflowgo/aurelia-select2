@@ -1,0 +1,9 @@
+<template>
+    <require from="select2/css/select2.min.css"></require>
+    <require from="select2-bootstrap-theme/dist/select2-bootstrap.min.css"></require>
+  
+    <select value.two-way="selectedValid" name.one-way="name" id.one-way="name" class="form-control" style.one-way="style" multiple data-placeholder.one-way="placeholder" data-allow-clear.one-way="allow_clear" size="1">
+      <option repeat.for="option of options" value.bind="option.value">${option.label_full ? option.label_full : option.label}</option>
+    </select>
+  </template>
+  

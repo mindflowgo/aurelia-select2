@@ -1,0 +1,14 @@
+<template>
+  <require from="_select2"></require>
+
+  <section class="au-animate">
+    <h2>${heading}</h2>
+    <form role="form" submit.delegate="submit()">
+      <div class="form-group">
+        <label for="options">Options</label>
+        <select2 name="multiselect" selected.bind="selected" options.bind="options" placeholder="Enter a selection" allow_clear="true" style='font-size:150%; width:100%;'></select2>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </section>
+</template>
